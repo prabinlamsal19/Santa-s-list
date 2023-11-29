@@ -1,0 +1,10 @@
+<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="logout">
+<circle id="Ellipse 5" cx="15" cy="15" r="14.5" stroke="#7350FF"/>
+<g id="logout_2">
+<path id="Vector" d="M12.6667 22H9.55556C9.143 22 8.74733 21.8361 8.45561 21.5444C8.16389 21.2527 8 20.857 8 20.4444V9.55556C8 9.143 8.16389 8.74733 8.45561 8.45561C8.74733 8.16389 9.143 8 9.55556 8H12.6667" stroke="#7350FF" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M18.1113 18.8889L22.0002 15L18.1113 11.1111" stroke="#7350FF" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M21.9998 15H12.6665" stroke="#7350FF" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</svg>
