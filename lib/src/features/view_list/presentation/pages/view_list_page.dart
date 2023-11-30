@@ -1,8 +1,4 @@
-import 'package:adaptive_sizer/adaptive_sizer.dart';
-import 'package:app_for_santa/gen/assets.gen.dart';
 import 'package:app_for_santa/src/core/di/injector.dart';
-import 'package:app_for_santa/src/core/extensions/extensions.dart';
-import 'package:app_for_santa/src/core/routes/app_router.dart';
 import 'package:app_for_santa/src/features/view_list/data/models/kid_model.dart';
 import 'package:app_for_santa/src/features/view_list/domain/repositories/kid_repository.dart';
 import 'package:app_for_santa/src/features/view_list/presentation/pages/add_kid_page.dart';
@@ -26,22 +22,6 @@ class ViewList extends StatelessWidget {
         body: BlocBuilder<AddKidCubit, AddKidState>(
           builder: (context, state) {
             final kidList = getIt<KidRepository>().getKidList();
-            // return state.when(
-            //   initial: () {
-            //     return const SizedBox();
-            //   },
-            //   empty: () => const EmptyStateWidget(isAddEvent: true),
-            //   success: (_) => ListView.builder(
-            //       padding: const EdgeInsets.symmetric(horizontal: 12),
-            //       itemCount: kidList.length,
-            //       itemBuilder: (context, index) {
-            //         return KidCard(
-            //             kidModel: KidModel(
-            //                 country: kidList[index].country,
-            //                 name: kidList[index].name,
-            //                 isNaughty: kidList[index].isNaughty));
-            //       }),
-            // );
             return Stack(
               children: [
                 ListView.builder(

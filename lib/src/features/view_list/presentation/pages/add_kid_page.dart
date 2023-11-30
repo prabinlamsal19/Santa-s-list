@@ -18,7 +18,6 @@ class AddKid extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    bool isNaughty = context.read<AddFormCubit>().isNaughty;
     TextEditingController nameController = TextEditingController();
     TextEditingController countryController = TextEditingController();
     return Scaffold(

@@ -1,6 +1,7 @@
 import 'package:adaptive_sizer/adaptive_sizer.dart';
 import 'package:flutter/material.dart';
 
+//Naughty/Nice text for Card
 class NaughtyNiceText extends StatelessWidget {
   const NaughtyNiceText({super.key, required this.text});
   final String text;

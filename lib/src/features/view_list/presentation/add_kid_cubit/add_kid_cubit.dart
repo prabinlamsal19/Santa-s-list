@@ -15,17 +15,20 @@ class AddKidCubit extends Cubit<AddKidState> {
       : super(AddKidState.initial(kidList: kidRepository.getKidList()));
   final KidRepository kidRepository;
 
+//for getting the list of kids from repo
   getKidList() {
     emit(const AddKidState.load());
     emit(AddKidState.initial(kidList: kidRepository.getKidList()));
   }
 
+//for adding a new kid to repo
   addKid(KidModel newKid) {
     emit(const AddKidState.load());
     final List<KidModel> updatedList = kidRepository.addKid(newKid);
     emit(AddKidState.initial(kidList: updatedList));
   }
 
+//to toggle the naughty/nice value of a kid
   toggleNaughty({required index}) {
     emit(const AddKidState.load());
     emit(AddKidState.initial(kidList: kidRepository.toggleNaughty(index)));
