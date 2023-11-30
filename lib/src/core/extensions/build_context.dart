@@ -64,6 +64,46 @@ extension BuildContextX on BuildContext {
     );
   }
 
+  void showCreateEventDialog({
+    required String title,
+    required Widget icon,
+    required String description,
+    required Widget content,
+  }) {
+    showDialog(
+      context: this,
+      builder: (BuildContext context) => Dialog(
+        surfaceTintColor: Colors.white,
+        backgroundColor: Colors.white,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(8.r),
+        ),
+        child: Padding(
+          padding: EdgeInsets.symmetric(vertical: 20.h, horizontal: 8.w),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              icon,
+              12.verticalSpace,
+              Text(
+                title,
+                style: AppStyles.text18PxBold.textDark,
+              ),
+              12.verticalSpace,
+              Text(
+                description,
+                textAlign: TextAlign.center,
+              ),
+              12.verticalSpace,
+              content,
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
   void showAlertDialog({
     required String title,
     String? description,

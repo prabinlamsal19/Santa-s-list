@@ -5,18 +5,19 @@ import '../extensions/extensions.dart';
 import '../themes/themes.dart';
 
 class CustomTextFormField extends StatefulWidget {
-  const CustomTextFormField({
-    super.key,
-    required this.labelText,
-    required this.onChanged,
-    this.keyboardType,
-    this.textInputAction,
-    this.errorText,
-    this.initialValue,
-    this.readOnly,
-  });
+  const CustomTextFormField(
+      {super.key,
+      required this.labelText,
+      required this.onChanged,
+      this.keyboardType,
+      this.textInputAction,
+      this.errorText,
+      this.initialValue,
+      this.readOnly,
+      required this.controller});
 
   final String labelText;
+  final TextEditingController controller;
   final String? errorText;
   final String? initialValue;
   final Function(String) onChanged;
@@ -64,6 +65,7 @@ class _CustomTextFieldState extends State<CustomTextFormField> {
           ),
         ),
         TextFormField(
+          controller: widget.controller,
           focusNode: _focusNode,
           autocorrect: false,
           readOnly: widget.readOnly ?? false,

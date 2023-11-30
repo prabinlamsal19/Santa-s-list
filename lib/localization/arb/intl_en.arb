@@ -1,5 +1,7 @@
 {
-  "@@locale": "en",
+  "@@locale": "en", 
+  "kidList":"Kids List",
+  "addKid":"Add Kid To List",
   "splashPageTitle": "Splash Page",
   "dashboard": "Dashboard",
   "login": "Login",

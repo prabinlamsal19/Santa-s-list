@@ -8,7 +8,6 @@ export 'app_router.gr.dart';
 class AppRouter extends $AppRouter {
   @override
   List<AutoRoute> routes = [
-    AutoRoute(page: AddKid.page),
     AutoRoute(page: ViewList.page, initial: true),
   ];
 }
