@@ -1,4 +1,3 @@
-import 'package:app_for_santa/src/core/di/injector.dart';
 import 'package:app_for_santa/src/features/view_list/domain/repositories/kid_repository.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
