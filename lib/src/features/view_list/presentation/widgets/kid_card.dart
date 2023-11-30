@@ -26,7 +26,7 @@ class KidCard extends StatelessWidget {
           children: [
             SizedBox(
               width: 42.w,
-              child: const Icon(Icons.abc),
+              child: const Icon(Icons.boy),
             ),
             const VerticalDivider(),
             8.horizontalSpace,
