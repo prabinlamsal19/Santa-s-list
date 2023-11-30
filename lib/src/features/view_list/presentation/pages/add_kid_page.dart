@@ -37,13 +37,13 @@ class AddKid extends StatelessWidget {
                   10.verticalSpace,
                   CustomTextFormField(
                       controller: nameController,
-                      labelText: 'Enter the name',
+                      labelText: l10n.enterName,
                       onChanged: (string) {
                         //to cubit 's model
                       }),
                   CustomTextFormField(
                       controller: countryController,
-                      labelText: 'Enter your country name',
+                      labelText: l10n.enterCountry,
                       onChanged: (string) {
                         //use this string to update the value of a model in cubit
                       }),
@@ -57,7 +57,7 @@ class AddKid extends StatelessWidget {
                           //update value in cubit
                         },
                       ),
-                      const Text('Nice'),
+                      Text(l10n.nice),
                       16.horizontalSpace,
                       Radio(
                         value: 2,
@@ -66,7 +66,7 @@ class AddKid extends StatelessWidget {
                           context.read<AddFormCubit>().emitNaughty();
                         },
                       ),
-                      const Text('Naughty')
+                      Text(l10n.naughty)
                     ],
                   ),
                   CustomButton(
@@ -81,7 +81,7 @@ class AddKid extends StatelessWidget {
                             color: AppColors.secondary,
                           ),
                           title: l10n.confirm,
-                          description: 'You have created a new addition',
+                          description: l10n.newAddition,
                           content: CustomButton(
                             isDisabled: false,
                             label: l10n.ok,

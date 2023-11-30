@@ -1,6 +1,11 @@
 {
   "@@locale": "en", 
   "kidList":"Kids List",
+  "nice":"Nice", 
+  "naughty":"Naughty",
+  "enterName":"Enter the kid's name",
+  "enterCountry":"Enter the kid's country",
+  "newAddition":"You have added a new kid to the entry",
   "addKid":"Add Kid To List",
   "splashPageTitle": "Splash Page",
   "dashboard": "Dashboard",
